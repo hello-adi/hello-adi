@@ -1,5 +1,4 @@
 <h1 align="center">Hi 👋, I'm Aditya</h1>
-- 🌱 I’m currently learning **React, Node, MongoDB**
 
 - 💬 Ask me about **the latest project I have in mind**
 
