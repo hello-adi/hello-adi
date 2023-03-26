@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Aditya</h1>
+<h1 align="center">Hello 👋, I'm Aditya</h1>
 
 - 💬 Ask me about **the latest project I have in mind**
 
