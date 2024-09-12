@@ -1,0 +1,19 @@
+body {
+  background: black;
+  cursor: url("/images/cursor/Abstract\ 1.ico"), auto;
+  color: aliceblue;
+}
+
+#hero {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 200px;
+  height: 175px;
+}
+
+.home {
+  margin-left: 10px;
+  margin-top: 5px;
+}

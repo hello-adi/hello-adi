@@ -1,0 +1,26 @@
+body {
+  background-color: black;
+  background-image: url("images/sky.gif");
+  color: red;
+  display: grid;
+  grid-template-rows: 0.8fr 0.2fr;
+  grid-template-areas:
+    "main"
+    "footer";
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  cursor: url("/images/cursor/sun.ico"), auto;
+}
+
+.container {
+  background-color: black;
+  margin: 40px auto;
+  margin-top: 0;
+  max-width: 800px;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #eeeeee;
+  padding: 0 10px;
+  padding: 50px;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="index.css" rel="stylesheet" type="text/css" media="screen" />
+
+    <link rel="stylesheet" type="text/css" href="aesthetic.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Welcome</title>
+  </head>
+  <body>
+    <audio
+      id="music_audio"
+      src="/files/The Strokes - Someday.mp3"
+      preload="auto"
+      volume="0"
+      loop
+    ></audio>
+    <!--Script tag to set volume, tried embedding external JS but doesn't work, will get back to it -->
+    <script>
+      audio = document.getElementById("music_audio");
+      audio.volume = 0.2;
+    </script>
+    <div class="content-container">
+      <img src="images/dancing-man.gif" alt="dancing-man" class="center-logo" />
+      <!-- <a href="someday.html">
+        
+        <div class="blog">
+          <img src="/images/contact_me.gif" id="projects" alt="" />
+        </div>
+      </a> -->
+
+      <div class="aesthetic-windows-95-button mute">
+        <button id="music_button" onclick="music_audio.play()">🔈</button>
+      </div>
+      <div class="aesthetic-windows-95-button mute" id="pause_button_div">
+        <button id="music_button_pause" onclick="music_audio.pause()">
+          🔇
+        </button>
+      </div>
+    </div>
+
+    <!-- Space Jam Section -->
+    <main>
+      <header class="sr-only">
+        <h1>My Portfolio</h1>
+        <p>
+          Welcome to aditya's website, the homepage is an ode to the classic
+          Space Jam movie.
+        </p>
+      </header>
+      <img src="images/dancing-man.gif" alt="dancing-man" class="center-logo" />
+      <!-- Plant Icons -->
+      <div class="idea-box container">
+        <a href="ideas.html">
+          <img class="idea planet" src="images/idea.gif" alt="Ideas" />
+        </a>
+      </div>
+      <div class="game-box container">
+        <img class="game planet" src="images/football1.gif" alt="game" />
+      </div>
+      <div class="projects-box container">
+        <a href="ideas.html">
+          <img
+            class="projects planet"
+            src="images/projects..gif"
+            alt="Projects."
+          />
+        </a>
+      </div>
+      <div class="random-box container">
+        <a href="random.html">
+          <img
+            class="random planet"
+            src="images/EXRANDOM.gif"
+            alt="Image of the month"
+          />
+        </a>
+      </div>
+      <div class="linkedin-box container">
+        <a href="https://www.linkedin.com/in/aditya-l/" target="_blank">
+          <img
+            class="linkedin planet"
+            src="images/workstation_office_chair_spinning_md_clr.gif"
+            alt="LinkedIn"
+          />
+        </a>
+      </div>
+      <div class="resume-box container">
+        <img class="resume planet" src="images/myresume.gif" alt="resume" />
+      </div>
+      <div class="why-box container">
+        <a href="someday.html">
+          <img class="why planet" src="images/why.gif" alt="Why?" />
+        </a>
+      </div>
+      <div class="email-box container">
+        <a href="mailto:aditya.net09@gmail.com">
+          <img class="email planet" src="images/Eatmail.gif" alt="email." />
+        </a>
+      </div>
+      <div class="about-me-box container">
+        <img
+          class="about-me planet"
+          src="images/aboutme1.gif"
+          alt="About moi"
+        />
+      </div>
+
+      <div class="github-box container">
+        <a href="https://www.github.com/hello-adi/" target="_blank">
+          <img class="github planet" src="images/a_pc.gif" alt="GitHub." />
+        </a>
+      </div>
+      <div class="site-map-box container">
+        <a href="sitemap.html">
+          <img
+            class="site-map planet"
+            src="images/p-sitemap.gif"
+            alt="Site Map planet."
+          />
+        </a>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <br />
+      <small>Made with ❤️ by adi</small>
+    </footer>
+  </body>
+</html>

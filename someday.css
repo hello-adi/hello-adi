@@ -1,0 +1,59 @@
+body {
+  background: url("images/sky.gif");
+  background-size: auto;
+  background-repeat: repeat;
+  cursor: url("/images/cursor/Music\ Disk.ico"), auto;
+}
+.container {
+  margin: 40px auto;
+  max-width: 650px;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #eeeeee;
+  padding: 0 10px;
+}
+
+.header {
+  display: flex;
+  border-bottom: 3mm ridge ghostwhite;
+  height: 100px;
+}
+.dance-gif {
+  max-height: 100%;
+  max-width: 100%;
+}
+.left-box {
+  background-color: transparent;
+  width: 10%;
+  border-right: 3mm ridge ghostwhite;
+  justify-content: center;
+  align-items: center;
+}
+.right-box {
+  flex: 1;
+  background-color: transparent;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  text-align: c;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+small {
+  color: #eeeeee;
+}
