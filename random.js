@@ -1,5 +1,5 @@
 let speed = 20;
-let scale = 0.11; // Image scale (I work on 1080p monitor)
+let scale = 0.13;
 let canvas;
 let ctx;
 let logoColor;
@@ -17,7 +17,8 @@ let dvd = {
   ctx = canvas.getContext("2d");
   dvd.img.src = "images/dvd-logo.png";
 
-  //Draw the "tv screen"
+  //canvas is dynamic based on the initial window size
+  //cannot be changed dynamically.
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 
