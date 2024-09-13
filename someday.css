@@ -5,10 +5,11 @@
   }
 }
 body {
-  background: url("images/sky.gif");
+  background: url("images/lu-aliengutz5.png");
   background-size: auto;
   background-repeat: repeat;
   cursor: url("/images/cursor/Music\ Disk.ico"), auto;
+  font-family: "Courier New", Courier, monospace;
 }
 .container {
   margin: 40px auto;
@@ -16,8 +17,13 @@ body {
   line-height: 1.8;
   font-size: 18px;
   /* color: #eeeeeeea; */
-  color: #f2f2f2;
-  padding: 0 10px;
+  color: black;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 15px;
+  background-color: bisque;
+  opacity: 0.9;
 }
 
 .header {
@@ -59,10 +65,14 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-top: 3rem;
+  opacity: 0.9;
 }
 
 small {
-  color: #eeeeeeae;
+  color: black;
+  background-color: antiquewhite;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 /* p {
