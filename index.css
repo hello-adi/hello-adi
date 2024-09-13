@@ -3,6 +3,15 @@
 Global
 =======================================
 */
+/* Media query for iPhone 11 Pro (375px x 812px) */
+@media screen and (max-width: 412px) {
+  .center-logo {
+    grid-column: 1 / span 3; /* Center the logo across the grid */
+    max-width: 100px; /* Smaller size for mobile */
+    margin-left: 30px;
+  }
+}
+
 *,
 *:before,
 *:after {
@@ -89,10 +98,12 @@ main {
   transform: translate(-50%, -50%);
   max-width: 200px;
   height: 175px;
+  /* border: 1px solid white; */
 }
 
 .container {
   position: relative;
+  /* border: 1px solid white; */
 }
 
 .planet {
@@ -113,7 +124,7 @@ main {
 }
 
 .game {
-  left: 70px;
+  left: 30px;
   bottom: 80px;
 }
 
@@ -132,7 +143,7 @@ main {
 }
 
 .random {
-  right: 5px;
+  left: -30px;
   bottom: 30px;
 }
 
@@ -149,7 +160,7 @@ main {
 }
 
 .resume {
-  left: 20px;
+  left: -10px;
   top: 40px;
 }
 
@@ -168,7 +179,7 @@ main {
 
 .email {
   top: 15px;
-  right: 10px;
+  left: -50px;
 }
 
 .about-me-box {
@@ -185,7 +196,7 @@ main {
 }
 
 .github {
-  left: 32px;
+  right: 40px;
   bottom: 52px;
 }
 .site-map-box {
@@ -194,7 +205,7 @@ main {
 
 .site-map {
   top: 19px;
-  right: 10px;
+  right: 20px;
 }
 
 /*
