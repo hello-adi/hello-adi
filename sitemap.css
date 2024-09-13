@@ -2,6 +2,7 @@ body {
   background: black;
   cursor: url("/images/cursor/visitor.ico"), auto;
   color: aliceblue;
+  font-size: 16px;
 }
 
 .container {
@@ -11,25 +12,23 @@ body {
   font-size: 18px;
   color: #feff89;
   padding: 0 10px;
-
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .info {
   border: 2px #feff89 ridge;
   display: flex;
-  flex-direction: row;
+  width: 100%;
 }
 
 .icon {
   border-right: 2px #feff89 ridge;
-  flex: 0 0 240px;
+  padding: 15px;
   display: flex;
   justify-content: center;
-  width: 30%;
-  padding: 15px;
-  max-width: 340px;
+  align-items: center;
+  flex: 0 0 240px;
 }
 
 .site-map-logo {
@@ -38,8 +37,35 @@ body {
   margin-right: auto;
   margin-top: 40px;
   margin-bottom: 30px;
+  max-width: 100%; /* Make the logo responsive */
+  height: auto;
 }
 
 .info-child {
   padding: 15px;
+  flex: 1; /* Take the remaining space */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .info {
+    flex-direction: column;
+  }
+
+  .icon {
+    border-right: none;
+    border-bottom: 2px #feff89 ridge; /* Change to bottom border */
+    width: 100%; /* Make icon take full width on small screens */
+    flex: none;
+  }
+
+  .info-child {
+    width: 100%; /* Ensure the content also takes full width */
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
 }
