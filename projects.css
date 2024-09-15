@@ -1,26 +1,129 @@
+/* title font */
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,500;1,500&display=swap");
+
+/* body text font */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,700;1,400;1,500;1,700&display=swap");
+
 body {
-  background-color: black;
-  background-image: url("images/sky.gif");
+  background: url("images/stars.gif");
+  animation: background 12s infinite linear;
   color: red;
-  display: grid;
-  grid-template-rows: 0.8fr 0.2fr;
-  grid-template-areas:
-    "main"
-    "footer";
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
   margin: 0;
   padding: 0;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   cursor: url("/images/cursor/sun.ico"), auto;
 }
-
+@keyframes background {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 307px 133px;
+  }
+}
 .container {
-  background-color: black;
-  margin: 40px auto;
-  margin-top: 0;
-  max-width: 800px;
+  font-family: "Libre Franklin", sans-serif;
+  background-color: #04000e;
+  border-radius: 60px;
+  border: 1px solid #4b0082;
+  margin: 70px auto;
+  max-width: 900px;
   line-height: 1.6;
   font-size: 18px;
   color: #eeeeee;
-  padding: 0 10px;
   padding: 50px;
+  padding-bottom: 80px;
+  text-align: center;
+
+  box-shadow: 2px 0px 0px mediumblue, 4px 0px 0px green, 6px 0px 0px darkred,
+    -2px 0px 0px mediumblue, -4px 0px 0px green, -6px 0px 0px darkred;
+}
+
+p {
+  color: red;
+}
+
+h1 {
+  background-color: #fe0000;
+  display: inline-block;
+  margin: 0 auto 40px auto;
+  padding: 0 20px;
+  font-size: 2.5rem;
+  font-family: "Jost", system-ui, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center; /* Ensure text is centered */
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 30px; /* Adjusted gap for larger cards */
+  max-width: 1000px; /* Increased width for larger cards */
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: #1c1b19;
+  border: 3px solid #9ae29a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 25px; /* Increased padding for larger cards */
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transform and shadow */
+}
+
+.project-card:hover {
+  transform: scale(1.1); /* Scales the card up slightly */
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); More intense shadow for the "pop out" effect */
+}
+
+.project-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.project-card h2 {
+  margin-top: 20px;
+  font-size: 1.75rem; /* Increased font size for titles */
+  color: #eeeeee;
+  text-shadow: 0px -1px 0px darkred, -1px 1px 0px mediumblue, 1px 1px 0px green;
+}
+
+.project-card p {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #ca82ff;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr; /* Stack cards in one column on smaller screens */
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .project-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-card p {
+    font-size: 1rem;
+  }
 }
