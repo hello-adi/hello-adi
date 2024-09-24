@@ -11,7 +11,28 @@
       type="image/x-icon"
       href="/images/cursor/Earth (4 colors).ico"
     />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // 1 in 42 chance
+        var chance = Math.floor(Math.random() * 42) + 1;
 
+        // Select the dancing man image
+        var heroImage = document.getElementById("hero-image");
+
+        // usual dancing man path
+        var regularImage = "images/dancing-man.gif";
+
+        // Secret image URL
+        var secretImage = "images/secret.png";
+
+        // Set the hero image source based on the chance
+        if (chance === 1) {
+          heroImage.src = secretImage;
+        } else {
+          heroImage.src = regularImage;
+        }
+      });
+    </script>
     <title>Welcome</title>
   </head>
   <body>
@@ -55,7 +76,12 @@
           Space Jam movie.
         </p>
       </header>
-      <img src="images/dancing-man.gif" alt="dancing-man" class="center-logo" />
+      <img
+        src="images/dancing-man.gif"
+        alt="dancing-man"
+        class="center-logo"
+        id="hero-image"
+      />
       <!-- Plant Icons -->
       <div class="idea-box container">
         <a href="ideas.html">
